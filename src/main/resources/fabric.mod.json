@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "raremobtracker",
+  "version": "${version}",
+  "name": "RareMobTracker",
+  "description": "A rare mob tracker for Wynncraft",
+  "authors": ["gayland"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/raremobtracker/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.gayland.raremobtracker.RareMobTracker"
+    ]
+  },
+  "mixins": [
+    "raremobtracker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
